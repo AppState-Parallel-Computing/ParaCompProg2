@@ -14,9 +14,4 @@
     std::cout << "# elapsed time ("<< #label <<"): "                       \
               << delta##label.count()  << "s" << std::endl;
 
-#define SPEEDUP(label1, label2) \
-    double speedup##label1 = delta##label2.count()/delta##label1.count();  \
-    std::cout << "SPEEDPUP (" << #label2 << "/" << #label1  << ") = "      \
-              << speedup##label1 << std::endl; 
-
 #endif

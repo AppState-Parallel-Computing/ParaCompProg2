@@ -78,7 +78,8 @@ int main ()
         TIMERSTOP(avx_transpose_and_mult)
         compare(Cn, Cat, M * N);
         //output speedup of the avxTransposeAndMult over transposeAndMult
-        SPEEDUP(avx_transpose_and_mult, transpose_and_mult)
+        //copy your SPEEDUP macro from assignment 1 into the .h file and uncomment this
+        //SPEEDUP(avx_transpose_and_mult, transpose_and_mult)
 
         cacheFlush();
         TIMERSTART(blocked_mult)
@@ -94,7 +95,8 @@ int main ()
         //make sure that the results of the avxBlockedMult are the same as naiveMult
         compare(Cn, Cab, M * N);
         //output speedup of the avxBlockedMult over the blockedMult
-        SPEEDUP(avx_blocked_mult, blocked_mult)
+        //copy your SPEEDUP macro from assignment 1 into the .h file and uncomment this
+        //SPEEDUP(avx_blocked_mult, blocked_mult)
 
         delete A; 
         delete B; 

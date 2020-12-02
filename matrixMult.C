@@ -18,14 +18,6 @@ void initialize(float * array, uint64_t size);
 void compare(float * array1, float * array2, uint64_t size);
 void cacheFlush();
 
-/* In addition to getting the code working, provide answers to the following question:
- * 
- * You may see that sometimes the blocked version performs worse or only slightly better than 
- * the naive version and both blocked perform consistently worse than the transpose versions.  
- * Why do you think that is?
- *
-*/
-
 #define TESTS 4
 int main () 
 {

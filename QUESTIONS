@@ -1,0 +1,7 @@
+
+In addition to getting the code working, provide an answer to the following question:
+
+You may see that sometimes the blocked version performs worse or only slightly better than 
+the naive version and both blocked perform consistently worse than the transpose versions.  
+Why is that?
+

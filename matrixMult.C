@@ -39,7 +39,7 @@ int main ()
             exit(1);
         }
 
-        printf("\n%d by %d TIMES %d by %d EQUALS %d by %d\n", M, N, L, N, M, N);
+        printf("\n%d by %d TIMES %d by %d EQUALS %d by %d\n", M, L, L, N, M, N);
         printf("BLOCKSIZE EQUALS %d\n", blkSz);
 
         float * A = (float *)aligned_alloc(32, sizeof(float) * M * L);
